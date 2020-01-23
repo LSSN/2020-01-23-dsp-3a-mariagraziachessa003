@@ -1,0 +1,4 @@
+//la sintesi sottrattiva analizza un suono attraverso 3 strumenti: spettrogramma, sonogramma e forma d'onda 
+import("stdfaust.lib");
+order = fcut(2020000);
+process = fi.lowpass (order 20) : fi.highpass (order 20000);
